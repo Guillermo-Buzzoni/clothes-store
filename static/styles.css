@@ -1,0 +1,88 @@
+/* Promoted Features */
+.promoted-features .feature img {
+    max-width: 60px;
+    margin-bottom: 20px;
+}
+
+.promoted-features .feature h4 {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.promoted-features .feature p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Highlighted Categories */
+.highlighted-categories .category img {
+    margin-bottom: 15px;
+}
+
+.highlighted-categories .category h5 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* New Arrivals & Best Sellers */
+.new-arrivals .product, 
+.best-sellers .product {
+    margin-bottom: 30px;
+}
+
+.new-arrivals .product img, 
+.best-sellers .product img {
+    margin-bottom: 15px;
+}
+
+/* Winter Collection */
+.winter-collection .collection-item img {
+    margin-bottom: 15px;
+}
+
+.winter-collection .collection-item h5 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Deals Banner */
+.deals-banner {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.deals-banner h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.deals-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+/* Newsletter Signup */
+.newsletter-signup h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.newsletter-signup p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+.footer h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer a {
+    color: #adb5bd;
+}
+
+.footer a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
