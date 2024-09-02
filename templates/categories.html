@@ -1,0 +1,17 @@
+<!--
+@app.route("/categories")
+def show_categories():
+    categories = products.execute("SELECT * FROM categories")
+    return render_template("categories.html", categories=categories)
+
+{% extends 'layout.html' %}
+-->
+
+{% block content %}
+    <h1>Categories</h1>
+    <ul>
+        {% for category in categories %}
+            <li><a href="{{ url_for('show_category', category=category) }}">{{ category }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

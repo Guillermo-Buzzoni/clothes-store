@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    <h1>cart</h1>
+    {% for cartitem in cartitems %}
+    <p>Name:<a href="{{ url_for('show_item', category=cartitem.category, item=cartitem.itemname) }}"> {{cartitem.itemname}}</a> 
+        Category:<a href="{{ url_for('show_category', category=cartitem.category) }}">{{cartitem.category}}</a> 
+        Price:{{cartitem.price}} 
+        Quantity:{{cartitem.quantity}}
+        <form action="/cart" method="post">
+            <input type="hidden" name="product_id" value= "{{ cartitem.itemid }}" >
+            <input type="number" name="quantity" min="0" value="{{cartitem.quantity}}">
+            <input type="hidden" name="updatecheck" value= "1" >
+            <button type="submit">Update Quantity</button>
+        </form>
+    </p>
+    
+    {% endfor %}
+</body>
+</html>
